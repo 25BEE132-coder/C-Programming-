@@ -12,7 +12,9 @@ total = mark1 + mark2 + mark3;
 average = total / 3.0;
 printf("Total marks = %d\n", total);
 printf("Average marks = %.2f\n", average);
-if(average >= 70) {
+if(mark1 < 35 || mark2 < 35 || mark3 < 35) {
+printf("Grade: Fail\n");
+} else if(average >= 70) {
 printf("Grade: Distinction\n");
 } else if(average >= 60) {
 printf("Grade: First\n");
@@ -25,4 +27,5 @@ printf("Grade: Fail\n");
 }
 return 0;
 }
+
 
